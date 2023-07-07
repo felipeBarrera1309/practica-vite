@@ -7,7 +7,7 @@ import img from './sass-logo.png';
 import imgLogo from './public/assets/css/modules/logo.module.scss';
 import { user } from './data.json';
 import { showName } from './services/deliverys.js';
-import { dateFormat } from "./util";
+import { currencyFormat } from "./util";
 
 const { name } = user
 
@@ -29,7 +29,7 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
-    <p>${dateFormat(new Date())}</p>
+    <p>${currencyFormat(50000000)}</p>
   </div>
 `
 
