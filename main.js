@@ -9,6 +9,14 @@ import { user } from './data.json';
 import { showName } from './services/deliverys.js';
 import { currencyFormat } from "./util";
 
+
+const modules = import.meta.glob('./modules/*.js')
+for(let value in modules){
+  const module = await modules[value]()
+  module.load()
+  console.log('Estos son los datos recibidos de las importanciones dinamicas: ', module);
+}
+
 const { name } = user
 
 
@@ -30,6 +38,7 @@ document.querySelector('#app').innerHTML = `
       Click on the Vite logo to learn more
     </p>
     <p>${currencyFormat(50000000)}</p>
+    
   </div>
 `
 
