@@ -1,0 +1,11 @@
+{
+    "user": {
+        "name": "Yave Felipe",
+        "lastName": "Barrera Pico",
+        "age": 21
+    },
+    "session": {
+        "id": "String Session",
+        "username": "felipeBarrera1266"
+    }
+}
