@@ -5,6 +5,7 @@
         "age": 21
     },
     "session": {
-        "id": "String Session"
+        "id": "String Session",
+        "username": "felipeBarrera1266"
     }
 }
