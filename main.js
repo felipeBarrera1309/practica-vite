@@ -8,16 +8,16 @@ import imgLogo from './public/assets/css/modules/logo.module.scss';
 import { user } from './data.json';
 import { showName } from './services/deliverys.js';
 import { currencyFormat } from "./util";
+import suma from './suma.ts';
+
+console.log('Esta es la funcion que se ejecuta al momento de importar el archivo de type: ', suma(10, 20))
 
 
-const modules = import.meta.glob('./modules/*.js')
-for(let value in modules){
-  const module = await modules[value]()
-  module.load()
-  console.log('Estos son los datos recibidos de las importanciones dinamicas: ', module);
-}
+
 
 const { name } = user
+
+console.log('Esta es la variable de entorno: ', import.meta.url)
 
 
 document.querySelector('#app').innerHTML = `
